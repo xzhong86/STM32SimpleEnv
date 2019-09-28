@@ -19,10 +19,8 @@
   */
 
 /* Includes ------------------------------------------------------------------*/
-//#include "main.h"
 
 #include "stm32f1xx_hal.h"
-//#include "stm32f1xx_nucleo.h"
 
 #define LED2_PIN                         GPIO_PIN_13
 #define LED2_GPIO_PORT                   GPIOC
