@@ -22,7 +22,7 @@ CUBE_INC += -I$(CUBE_DRIVER)/CMSIS/Device/ST/$(STM32_TYPE)/Include
 CUBE_INC += -I$(CUBE_DRIVER)/CMSIS/Include
 
 com_objs = objs/startup.o
-src_objs = $(patsubst Src/%.c,objs/%.o,$(wildcard Src/*.c))
+src_objs = $(patsubst src/%.c,objs/%.o,$(wildcard src/*.c))
 
 CFLAGS += -mcpu=cortex-m3 -mthumb -DSTM32F103xB
 CFLAGS += $(CUBE_INC) -I./src
